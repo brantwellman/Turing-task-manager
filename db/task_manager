@@ -1,0 +1,9 @@
+---
+tasks:
+- id: 1
+  title: Stay warm
+  description: Taking care of your physical needs is important
+- id: 2
+  title: Drink coffee
+  description: This helps with task 1 and helps keep you awake
+total: 2
