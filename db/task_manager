@@ -6,4 +6,7 @@ tasks:
 - id: 2
   title: Drink coffee
   description: This helps with task 1 and helps keep you awake
-total: 2
+- id: 3
+  title: This is my test task
+  description: "Because even they need to be made\r\n"
+total: 3

@@ -1,5 +1,15 @@
-<a href = "/tasks">Task Index</a>
-
-<h1><%= @task.title %></h1>
-
-<p><%= @task.description %></p>
+<br/><br/><br/>
+<div class="container">
+  <div class="col s12 m6">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title"><%= @task.title %></span>
+        <p><%= @task.description %></p>
+      </div>
+      <div class="card-action">
+        <a href="#">Edit Task</a>
+        <a href="#">Delete Task</a>
+      </div>
+    </div>
+  </div>
+</div>
