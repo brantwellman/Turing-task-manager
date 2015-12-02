@@ -1,0 +1,20 @@
+<div>
+  <h5>Edit the task:</h5>
+  <br/>
+  <form action = "/tasks/<%= @task.id %>" method="post">
+    <div class="row">
+      <div class="input-field">
+        <input type="hidden" name = "_method" value="put">
+        <input type='text' name='task[title]' value="<%= @task.title %>" id="task_name"/><label for="task_name">Task Name</label><br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field">
+        <textarea name='task[description]' placeholder="  Task description"><%= @task.description %></textarea><br/>
+      </div>
+    </div>
+    <button class="btn blue waves-effect waves-teal" type="submit" name="action">Submit
+     <i class="material-icons right">send</i>
+   </button>
+  </form>
+</div>
