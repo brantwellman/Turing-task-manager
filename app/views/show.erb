@@ -7,8 +7,13 @@
         <p><%= @task.description %></p>
       </div>
       <div class="card-action">
-        <a href="#">Edit Task</a>
-        <a href="#">Delete Task</a>
+        <div class="row">
+          <a href="/tasks/<%= @task.id %>/edit" class="waves-effect waves-light btn">Edit Task</a>
+          <form class="col s6" action="/tasks/<%= @task.id %>" method="post">
+            <input type="hidden" name="_method" value="delete">
+            <input class="waves-effect waves-light btn" type="submit" value="Delete Task">
+          </form>
+        </div>
       </div>
     </div>
   </div>

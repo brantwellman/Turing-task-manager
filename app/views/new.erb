@@ -1,7 +1,7 @@
 <div>
   <h5>Enter a new task:</h5>
   <br/>
-  <form action = "/tasks" method="post">
+  <form action = "/tasks" id="new_task" method="post">
     <div class="row">
       <div class="input-field">
         <input type='text' name='task[title]' id="task_name"/><label for="task_name">Task Name</label><br/>
@@ -12,7 +12,7 @@
         <textarea name='task[description]' placeholder="  Task description"></textarea><br/>
       </div>
     </div>
-    <button class="btn blue waves-effect waves-teal" type="submit" name="action">Submit
+    <button class="btn blue waves-effect waves-teal" type="submit" value = "submit" name="action">Submit
      <i class="material-icons right">send</i>
    </button>
   </form>
